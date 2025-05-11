@@ -88,6 +88,31 @@
   gap: 96px;
 }
 
+@media (min-width: 1440px){
+  .longread {
+    grid-template-areas: 
+    "b b s"
+    "b b s"
+    "b b v"
+    "b b ."
+    
+    ;
+    gap: 60px 24px;
+  }
+
+  .blog{
+    grid-area: b;
+  }
+
+  .socials {
+    grid-area: s;
+  }
+
+  .video {
+    grid-area: v;
+  }
+}
+
 .blog {
   display: grid;
   gap: 48px;
@@ -191,3 +216,10 @@
   background-color: var(--blue-light);
 }
 
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 8px;
+  align-items: center;
+}
